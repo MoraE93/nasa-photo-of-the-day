@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios'
 import "./App.css";
-
+ 
+import NasaPhoto from "./NasaPhoto";
+import {AppContainer} from './Styles'
 
 function App() {
   const [data, setData] = useState([])
@@ -16,6 +18,9 @@ function App() {
 
   return (
     <div className="App">
+       <AppContainer>
+       <NasaPhoto />
+       </AppContainer>
       <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
